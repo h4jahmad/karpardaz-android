@@ -1,3 +1,25 @@
 <resources>
-      <string name="app_name">Karpardaz</string>
+    <string name="app_name">کارپرداز</string>
+
+    <string name="date_title">تاریخ</string>
+    <string name="cost_title">مبلغ</string>
+    <string name="subject_title">موضوع</string>
+    <string name="insert">افزودن</string>
+    <string name="tojibi">توجیبی</string>
+    <string name="tankhah">تنخواه</string>
+    <string name="reports">گزارش ها</string>
+    <string name="search_title">جستو جو</string>
+    <string name="search_hint">تاریخ یا موضوع را جستوجو کنید</string>
+    <string name="close_title">بستن</string>
+    <string name="new_cost">هزینه جدید</string>
+    <string name="no_data_title">اطلاعاتی موجود نیست!</string>
+    <string name="edit_delete_title">ویرایش و حذف</string>
+    <string name="delete_title">حذف</string>
+    <string name="ok">تایید</string>
+    <string name="no">بیخیال</string>
+    <string name="today">امروز</string>
+    <string name="backup_title">تهیه پشتیبان</string>
+    <string name="make_backup_title">تهیه پشتیبان</string>
+    <string name="check_for_connection_message">لطفا دسترسی خود به اینترنت را بررسی نمایید</string>
+
 </resources>
