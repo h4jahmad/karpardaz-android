@@ -1,4 +1,7 @@
 apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
 
 android {
     compileSdkVersion rootProject.ext.min_sdk_version
@@ -25,8 +28,13 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation "androidx.core:core-ktx:$rootProject.ktx_core_version"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$rootProject.kotlin_version"
+
     implementation "androidx.appcompat:appcompat:$rootProject.app_compat_version"
     implementation "androidx.constraintlayout:constraintlayout:$rootProject.constraint_layout_version"
+
     testImplementation "junit:junit:$rootProject.junit_version"
     androidTestImplementation "androidx.test.ext:junit:$rootProject.android_junit_version"
     androidTestImplementation "androidx.test.espresso:espresso-core:$rootProject.espresso_core_version"

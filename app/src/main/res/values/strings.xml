@@ -1,3 +1,7 @@
 <resources>
-    <string name="app_name">Karpardaz</string>
+
+    <string name="app_name" translatable="false">Karpardaz</string>
+
+    <string name="app_name_display">Karpardaz</string>
+
 </resources>
