@@ -1,4 +1,4 @@
-package com.example.karpardaz
+package ir.sika.karpardaz
 
 import org.junit.Test
 

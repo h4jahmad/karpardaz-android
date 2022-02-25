@@ -1,6 +1,15 @@
 <resources>
     <string name="app_name">Karpardaz</string>
-    <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
+
+    <string name="costs">هزینه‌ها</string>
+    <string name="incomes">درآمدها</string>
+    <string name="stocks">تنخواه‌ها</string>
+
+    <string name="cost_single">هزینه</string>
+    <string name="income_single">درآمد</string>
+    <string name="stock_single">تنخواه</string>
+
+    <string name="title_costs">@string/costs</string>
+    <string name="title_incomes">@string/incomes</string>
+    <string name="title_stocks">@string/stocks</string>
 </resources>
