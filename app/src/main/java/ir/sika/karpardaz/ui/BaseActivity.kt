@@ -1,21 +1,27 @@
 package ir.sika.karpardaz.ui
 
+import android.view.LayoutInflater
 import androidx.appcompat.app.AppCompatActivity
 import androidx.viewbinding.ViewBinding
 
-abstract class BaseActivity<V: ViewBinding> : AppCompatActivity(){
+typealias BindingInitializer = (LayoutInflater) -> ViewBinding
 
-    protected var _binding: V? = null
+abstract class BaseActivity<V : ViewBinding> : AppCompatActivity() {
 
-    protected val binding get() = _binding!!
+	private var _binding: V? = null
 
-    override fun onDestroy() {
-        clearReferences()
-        super.onDestroy()
-    }
+	protected val binding
+		get() = _binding ?: throw NullPointerException("ViewBinding is not initialized")
 
-    private fun clearReferences() {
-        _binding = null
-    }
+	abstract val bindingInitializer: BindingInitializer
+
+	override fun onDestroy() {
+		clearReferences()
+		super.onDestroy()
+	}
+
+	private fun clearReferences() {
+		_binding = null
+	}
 
 }

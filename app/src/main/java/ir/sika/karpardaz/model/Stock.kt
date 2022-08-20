@@ -1,12 +1,13 @@
 package ir.sika.karpardaz.model
 
-import androidx.annotation.NonNull
+import androidx.room.Entity
 import androidx.room.PrimaryKey
 
+@Entity
 data class Stock(
 	@PrimaryKey override val id: String,
-	@NonNull val name: String,
-	@NonNull val currency: String,
-	@NonNull val createdAt: String,
-	@NonNull val userId: String
+	val name: String,
+	val currency: String,
+	val createdAt: String,
+	val userId: String
 ) : BaseModel(id)

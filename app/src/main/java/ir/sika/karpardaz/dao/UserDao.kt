@@ -12,6 +12,6 @@ interface UserDao {
 	fun getUser(email: String, password: String): User
 
 	@Insert
-	fun insertUser(user: User): String
+	fun insertUser(user: User): Long
 
 }
